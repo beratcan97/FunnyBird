@@ -1,0 +1,53 @@
+<div class="vh-100-height d-flex flex-column justify-content-center align-items-center bg-primary"
+    (click)="onScreenClick()">
+    <div class="d-flex flex-column justify-content-center">
+        <h1 class="text-white">HighScore: {{highScore}}</h1>
+        <h1 class="text-white">Score: {{score}}</h1>
+
+        <div id="player" class="player">
+            <div class="playerBody"></div>
+            <div class="playerNose"></div>
+            <div class="playerTail"></div>
+            <div class="playerEye"></div>
+            <div class="playerFeets"></div>
+            <ng-container *ngIf="playerWingUp; else playerWingDown" >
+                <div class="playerWingUp"></div>
+            </ng-container>
+            <ng-template #playerWingDown>
+                <div class="playerWingDown"></div>
+            </ng-template>
+        </div>
+
+        <!--Sun-->
+        <div *ngIf="!nightFilter" class="sun"></div>
+
+        <!--Moon-->
+        <div *ngIf="nightFilter" class="d-flex flex-row"> 
+            <span class="moonPart moonPart1"></span>
+            <span class="moonPart moonPart2 bg-primary"></span>
+            <span class="moonPart moonPart3 opacityFilter"></span>
+        </div>
+
+        <!--Cloud-->
+        <div class="d-flex flex-row"> 
+            <span id="cDP1" class="cloudDot cDP1"></span>
+            <span id="cDP2" class="cloudDot cDP2"></span>
+            <span id="cDP3" class="cloudDot cDP3"></span>
+        </div>
+
+        <!--    Line 1  -->
+        <div id="tp1" class="topPipe pipe"></div>
+        <div id="bp1" class="bottomPipe pipe"></div>
+        <!--    Line 2  -->
+        <div id="tp2" class="topPipe2 pipe"></div>
+        <div id="bp2" class="bottomPipe2 pipe"></div>
+
+        <!--Bottom bricks-->
+        <div class="d-flex flex-row posBottom"> 
+            <div class="bottomBrick" *ngFor="let i of ['','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','']; let i = index"></div>
+        </div>
+
+        <!--    Night filter    -->
+        <div *ngIf="nightFilter" class="nightFilter vh-100-height opacityFilter"></div>
+    </div>
+</div>

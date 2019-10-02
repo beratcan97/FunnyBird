@@ -1,0 +1,174 @@
+/*   player */
+.player {
+    width: 10%;
+    position: fixed;
+    left: 10%;
+    bottom: 30%;
+}
+.playerBody {
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+}
+.playerNose {
+    width: 0; 
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 15px solid black;
+    margin-top: -17.5px;
+    margin-left: 25px;
+  }
+.playerTail {
+    width: 0; 
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid red;
+    margin-top: -15px;
+    margin-left: -5px;
+}
+  .playerEye {
+    height: 13px;
+    width: 13px;
+    background-color: black;
+    border-radius: 50%;
+    border: solid 5px white;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+.playerFeets{
+    height: 5px;
+    width: 5px;
+    background-color: black;
+    margin-top: 17.5px;
+    margin-left: 10px;
+}
+.playerWingDown {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    margin-top: -20px;
+    margin-left: 2px; 
+}
+.playerWingUp {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    margin-top: -20px;
+    margin-left: 2px; 
+}
+/*  Pipes   */
+.pipe {
+    position: fixed;
+    background-image: linear-gradient(to right, lightgreen, green, green, black);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 1px solid black;
+}
+.topPipe {
+    width: 10%;
+    height: 70% ;
+    bottom: 30%;
+}
+.bottomPipe {
+    width: 10%;
+    height: 20% ;
+    bottom: 0px;
+}
+.topPipe2 {
+    width: 10%;
+    height: 100% ;
+}
+.bottomPipe2 {
+    width: 10%;
+    bottom: 0px;
+}
+
+/*  Cloud   */
+.cloudDot {
+    height: 6rem;
+    width: 6rem;
+    background-color: #bbb;
+    border-radius: 50%;
+}
+.cDP1 {
+    position: fixed;
+    top: 6rem;
+}
+.cDP2 {
+    position: fixed;
+    top: 4rem;
+}
+.cDP3 {
+    position: fixed;
+    top: 6rem;
+}
+
+.sun {
+    height: 5rem;
+    width: 5rem;
+    background-color: yellow;
+    border-radius: 50%;
+    position: fixed;
+    top: 6rem;
+    margin-left: 50%;
+}
+
+.moonPart {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1;
+}
+
+.moonPart1 {
+    background-color: whitesmoke;
+    left: 3rem;
+    top: 6rem;
+}
+
+.moonPart2 {
+    left: 4rem;
+    top: 5rem;
+}
+
+.moonPart3 {
+    left: 4rem;
+    top: 5rem;
+    background-color: black;
+}
+
+.nightFilter{
+    position: absolute;
+    width: 100%;
+    background-color:  black;
+    left: 0px;
+}
+
+.opacityFilter {
+    opacity: 0.8;
+}
+
+/*  Bottom brick    */
+.bottomBrick {
+    width: 25px;
+    height: 25px;
+    background-color: burlywood;
+    border: 1px solid black;
+}
+
+.posBottom {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+}
+
+.vh-100-height {
+    height: 100vh;
+}

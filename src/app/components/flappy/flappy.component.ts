@@ -41,6 +41,10 @@ export class FlappyComponent implements OnInit, OnDestroy {
   // Day night check
   nightFilter = false;
 
+  //Last clicked
+  lastOnScreenClick: number;
+  playerSpinns = false;
+
   constructor(private router: Router) { }
 
   ngOnInit() {
@@ -78,7 +82,7 @@ export class FlappyComponent implements OnInit, OnDestroy {
     } else {
       document.getElementById('tp1').style.right = (this.topPipe.toString() + '%');
     }
-    2
+    
     //Bottom pipe updater 
     if (this.bottomPipe == 100) {
       this.bottomPipe = 1;
@@ -109,7 +113,6 @@ export class FlappyComponent implements OnInit, OnDestroy {
   }
 
   updateCloud() {
-
     //Dot 1 updater
     this.cDP1 = this.cDP1 + 0.5;
     document.getElementById('cDP1').style.right = (this.cDP1.toString() + '%');
@@ -174,7 +177,7 @@ export class FlappyComponent implements OnInit, OnDestroy {
       localStorage.setItem('flappyGameHighScore', this.score.toString());
       this.publish(this.highScore);
     }
-    // this.router.navigate(['/']);
+    this.router.navigate(['/']);
   }
 
   updateScore(): void {
@@ -206,5 +209,17 @@ export class FlappyComponent implements OnInit, OnDestroy {
     while (this.playerBottom < newPos) {
       this.playerBottom++;
     }
+
+    var date = new Date();
+    if(date.getTime() < this.lastOnScreenClick + 300) {
+      this.playerSpinns = true;
+
+      document.getElementById('player').classList.add('spinner-border');
+
+      setTimeout( () => {
+        document.getElementById('player').classList.remove('spinner-border');
+      }, 500 );
+    }
+    this.lastOnScreenClick = date.getTime();
   }
 }

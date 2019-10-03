@@ -29,7 +29,7 @@
     margin-top: -15px;
     margin-left: -5px;
 }
-  .playerEye {
+.playerEye {
     height: 13px;
     width: 13px;
     background-color: black;
@@ -42,7 +42,7 @@
     height: 5px;
     width: 5px;
     background-color: black;
-    margin-top: 17.5px;
+    margin-top: 15px;
     margin-left: 10px;
 }
 .playerWingDown {

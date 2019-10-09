@@ -1,0 +1,12 @@
+[
+    {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target" : { 
+        "namespace": "android_app",
+        "package_name": "org.funnybird.game",
+        "sha256_cert_fingerprints": [
+            "6A:7E:5A:31:B4:7C:DE:99:EB:EA:AE:CD:89:E5:C9:5A:24:EA:36:16:AA:BD:A6:DA:2A:61:E5:BE:26:2F:26:8C"
+            ]
+    }
+  }
+]

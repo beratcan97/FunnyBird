@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1570590788403,
+  "timestamp": 1570590904823,
   "index": "FunnyBird/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "FunnyBird/favicon.ico",
         "FunnyBird/index.html",
-        "FunnyBird/main-es2015.06b1842a17ffcd7e04d4.js",
-        "FunnyBird/main-es5.06b1842a17ffcd7e04d4.js",
+        "FunnyBird/main-es2015.a49ed4ace372f4859414.js",
+        "FunnyBird/main-es5.a49ed4ace372f4859414.js",
         "FunnyBird/manifest.webmanifest",
         "FunnyBird/polyfills-es2015.e85e284a6921191b4e9d.js",
         "FunnyBird/polyfills-es5.f3dcbfca242fe061aec8.js",
@@ -51,9 +51,9 @@
     "FunnyBird/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "FunnyBird/assets/images/flappy/player.gif": "7e7921dd0355980215d7f9d3d40dd5e4cf3078c0",
     "FunnyBird/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "FunnyBird/index.html": "9adba10906e3e89fea8e5ab6f9acc964921d2c0e",
-    "FunnyBird/main-es2015.06b1842a17ffcd7e04d4.js": "34467b0cd866ba24c5af60a2a1393474b6f03b63",
-    "FunnyBird/main-es5.06b1842a17ffcd7e04d4.js": "5ed7ad41f5f9a573518335f5e71ff73c629543bc",
+    "FunnyBird/index.html": "985eaf09ba6525401af2e34b44801648bf531d27",
+    "FunnyBird/main-es2015.a49ed4ace372f4859414.js": "8480eeb6155d6f6841e2a07b331bbb2a9d43e864",
+    "FunnyBird/main-es5.a49ed4ace372f4859414.js": "0dce2a9e5beb3b5c675dd229652108a9c1c7330a",
     "FunnyBird/manifest.webmanifest": "ae17ea597f2ce99c93dad8c7acb85ae0ed22a556",
     "FunnyBird/polyfills-es2015.e85e284a6921191b4e9d.js": "e2f28c3743afd2899e140ad831df9675c233c02b",
     "FunnyBird/polyfills-es5.f3dcbfca242fe061aec8.js": "db091f7ef692a1d3add240459a2ea20c81cd6f19",

@@ -1,5 +1,7 @@
 {
   "name": "FunnyBird",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
